@@ -6,7 +6,7 @@ fprintf('Reconstruction begins...\n');
 
 %% Initialization
 img = imread('.\data\test.png');
-load('.\data\test_pts.mat'); lan2d = pts;
+load('.\data\test_pts.mat'); lan2d = pts; % pts - a 68x2 matrix of landmark coordinates 
 [img, lan2d] = cropImg(img, lan2d);
 
 % initialize parameters
